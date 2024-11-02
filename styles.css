@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  background: var(--color-grey-900, #141414);
+  overflow: hidden;
+}
+
+.middle-box {
+  height: 600px;
+  width: 400px;
+  display: flex;
+  max-width: 384px;
+  padding: var(--spacing-500, 40px);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-300, 24px);
+  flex: 1 0 0;
+  border-radius: var(--spacing-150, 12px);
+  background: var(--color-grey-800, #1f1f1f);
+  padding: 50px;
+}
+
+.header {
+  color: var(--color-white, #fff);
+  text-align: center;
+
+  font-family: "Inter";
+  font-size: var(--font-size-text-preset-1, 24px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  align-items: stretch;
+}
+
+.top {
+  color: var(--color-green, #c4f82a);
+  text-align: center;
+  font-family: "Inter";
+  font-size: var(--font-size-text-preset-2, 14px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.middle {
+  color: var(--color-white, #fff);
+  text-align: center;
+  font-family: "Inter";
+  font-size: var(--font-size-text-preset-2, 14px);
+  font-style: normal;
+  font-weight: 450;
+  line-height: 150%;
+}
+.last {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.item1 {
+  display: flex;
+  padding: var(--spacing-150, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  align-self: stretch;
+
+  border-radius: var(--spacing-100, 8px);
+  background: var(--color-grey-700, #333);
+  width: 300px;
+  color: #ffffff;
+  font-family: "Inter";
+  border: 0;
+  font-size: var(--font-size-text-preset-2, 14px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.item1:hover {
+  background-color: #c4f82a;
+  color: black;
+  cursor: pointer;
+}
